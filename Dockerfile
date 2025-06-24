@@ -14,6 +14,12 @@ WORKDIR /app
 
 COPY --from=builder /app/alertbot .
 
-RUN chmod +x alertbot
+COPY cron /app/cron
 
-CMD ["./alertbot"]
+COPY entrypoint.sh /app/entrypoint.sh
+
+RUN crontab /app/cron
+
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]

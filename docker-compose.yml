@@ -7,4 +7,6 @@ services:
       dockerfile: Dockerfile
     container_name: alertbot
     restart: "no"
-    command: ./alertbot
+    environment:
+      - TZ=Europe/Moscow
+    
