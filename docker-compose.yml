@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  alertbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alertbot
+    restart: "no"
+    command: ./alertbot
