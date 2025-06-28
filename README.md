@@ -54,7 +54,7 @@ const cianURL = "Обрабатываемый URL API"
 // AVITO
 
 var avitoAccounts = map[string]AvitoAccount{
-	"КАБИНЕТ !": {
+	"КАБИНЕТ 1": {
 		ClientID:     "CLIENT ID",
 		ClientSecret: "CLIENT SECRET",
 	},
