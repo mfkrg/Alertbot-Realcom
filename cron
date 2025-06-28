@@ -1,1 +1,1 @@
-0 10 * * * docker run --rm alertbot >> /var/log/alertbot.log 2>&1
+40 19 * * * /app/alertbot >> /var/log/alertbot.log 2>&1
